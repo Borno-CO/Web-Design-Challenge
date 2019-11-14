@@ -1,0 +1,56 @@
+.navbar {
+    background: rgb(0, 204, 255) !important;
+    height: 70px;
+}
+
+
+.navbar-brand {
+    font-family: "Verdanna", Geneva, sans-serif;
+    color: white !important;
+    font-size: 30px;
+    text-align: center;
+    background: rgba(0, 102, 255, 0.993);
+    padding: 20px;
+    margin-left: 50px;
+}
+
+
+
+.nav-item {
+    font-family: "Verdanna", Geneva, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background: #f1f1f1f8;
+}
+
+
+
+.jumbotron {
+    background: white;
+    margin-top: 50px;
+    height: 575px;
+    padding: 40px;
+}
+
+
+.display-4 {
+    font-family: "Verdanna", Geneva, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(0, 102, 255, 0.993);
+}
+
+.h1 {
+    font-family: "Verdanna", Geneva, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(0, 102, 255, 0.993);
+}
+
+.thead {
+    background:  rgba(0, 102, 255, 0.993);
+    color: white;
+}
+}
