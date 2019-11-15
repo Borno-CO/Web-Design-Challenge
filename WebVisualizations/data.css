@@ -10,8 +10,13 @@
     font-size: 30px;
     text-align: center;
     background: rgba(0, 102, 255, 0.993);
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
     margin-left: 50px;
+    height: 70px;
+    vertical-align: center;
 }
 
 
@@ -25,14 +30,6 @@ body {
     background: #f1f1f1f8;
 }
 
-
-
-.jumbotron {
-    background: white;
-    margin-top: 50px;
-    height: 575px;
-    padding: 40px;
-}
 
 
 .display-4 {
@@ -53,4 +50,8 @@ body {
     background:  rgba(0, 102, 255, 0.993);
     color: white;
 }
+
+
+td {
+    text-align: right;
 }

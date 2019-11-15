@@ -6,7 +6,7 @@
   <title>Lattitude Homework Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="cloud.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                 <a class="nav-link" href="comparisons.html">Comparisons</a>
             </li>
             <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">Cities</a>
+                    <a class="nav-link" href="cities.html">Cities</a>
                 </li>
             <li class="nav-item">
                 <a class="nav-link" href="data.html">Data</a>
@@ -55,7 +55,7 @@
                         <hr class="my-4">
                         <div class="image pr-2">
                             <a target="_blank" href="assets/images/Cloudiness by City Latitude.png">
-                                <img src="assets/images/Cloudiness by City Latitude.png" width=425 alt="Mean Cloudiness by Lattitude Map">
+                                <img class="featured" src="assets/images/Cloudiness by City Latitude.png" width=425 alt="Mean Cloudiness by Lattitude Map">
                             </a>
                         </div>
                         <p class="p1">The extreme northern latitudes may tend to be cloudier, but there is insufficient sample in the extreme southern latitudes to say. There also may be a “spike” in cloudiness in north of +40 degrees. More days to sample throughout the year would be helpful in seeing if this is indeed the case.</p>
@@ -67,26 +67,27 @@
                     <div class="jumbotron">
                         <h1 class="display-4">Visualizations</h1>
                         <hr class="my-4">
-                        <article>
+                        <figure>
                             <a class="nav-link" href="temperature.html">
-                                <img class="upper-left" src="assets/images/Temperature by City Latitude.png" alt="Temperature Map">
+                                <img class="upper-left" src="assets/images/Temperature by City Latitude.png" alt="Temperature Map" data-toggle="tooltip" data-placement="bottom" title="Click for Temperature Results">
                             </a>
-                        </article>
-                        <article>
+                        </figure>
+                
+                        <figure>
                             <a class="nav-link" href="humidity.html">
-                                <img class="upper-right" src="assets/images/Humidity by City Latitude.png" alt="Humidity Map">
+                                <img class="upper-right" src="assets/images/Humidity by City Latitude.png" alt="Humidity Map" data-toggle="tooltip" data-placement="bottom" title="Click for Humidity Results">
                             </a>
-                        </article>
-                        <article>
+                        </figure>
+                        <figure>
                             <a class="nav-link" href="wind.html">
-                                <img class="lower-left" src="assets/images/Wind Speed by City Latitude.png" alt="wind Map">
+                                <img class="lower-left" src="assets/images/Wind Speed by City Latitude.png" alt="wind Map" data-toggle="tooltip" data-placement="bottom" title="Click for Wind Speed Results">
                             </a>
-                        </article>
-                        <article>
+                        </figure>
+                        <figure>
                             <a class="nav-link" href="cloudiness.html">
-                                <img class="lower-right" src="assets/images/Cloudiness by City Latitude.png" alt="Cloudiness Map">
+                                <img class="cloud" src="assets/images/Cloudiness by City Latitude.png" alt="Cloudiness Map" data-toggle="tooltip" data-placement="bottom" title="Click for Cloudiness Results">
                             </a>
-                        </article>
+                        </figure>
                     </div>    
                 </div>
             </div> 

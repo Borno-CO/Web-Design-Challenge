@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lattitude Homework Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="compare.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="cloudiness.html">Precipitation</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="wind.html">Wind</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="index.html">Home</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="cities.html">Cities</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>      
+    
+    
+    <div class="container"> 
+        <div class="row">
+
+            <div class="col-md-12">
+                <h1 class="display-4">Comparison: Lattitude vs. X</h1>
+                <hr>
+                <p>Click any plot for analysis.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6"> 
+                <h1 class="plot_title">vs. Temperature</h1>
+                <figure>
+                    <a class="nav-link" href="temperature.html">
+                        <img class="comparison" src="assets/images/Temperature by City Latitude.png" alt="Temperature Map" data-toggle="tooltip" data-placement="bottom" title="Click for Temperature Results">
+                    </a>
+                </figure>
+
+            </div>
+            <div class="col-md-6">               
+                <h1 class="plot_title">vs. Humidity</h1>
+                <figure>
+                    <a class="nav-link" href="humidity.html">
+                        <img class="comparison" src="assets/images/Humidity by City Latitude.png" alt="Humidity Map" data-toggle="tooltip" data-placement="bottom" title="Click for Humidity Results">
+                    </a>
+                </figure>                
+            </div>
+
+            <div class="col-md-6">               
+                <h1 class="plot_title">vs. Wind Speed</h1>
+                <figure>
+                    <a class="nav-link" href="wind.html">
+                        <img class="comparison" src="assets/images/Wind Speed by City Latitude.png" alt="wind Map" data-toggle="tooltip" data-placement="bottom" title="Click for Wind Speed Results">
+                    </a>
+                </figure>               
+            </div>
+
+            <div class="col-md-6">               
+                <h1 class="plot_title">vs. Cloudiness</h1>
+                <figure>
+                    <a class="nav-link" href="cloudiness.html">
+                        <img class="comparison" src="assets/images/Cloudiness by City Latitude.png" alt="Cloudiness Map" data-toggle="tooltip" data-placement="bottom" title="Click for Cloudiness Results">
+                    </a>
+                </figure>               
+            </div>
+
+        </div> 
+    </div>      
+  
+</body>
+
+</html>

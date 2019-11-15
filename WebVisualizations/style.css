@@ -25,7 +25,7 @@ body {
     background: #f1f1f1f8;
 }
 
-.container{
+.container {
     display: flex;
 }
 
@@ -34,7 +34,7 @@ body {
     margin-left: -100px;
     margin-top: 50px;
     height: 600px;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .two .jumbotron {
@@ -43,7 +43,7 @@ body {
     margin-top: 50px;
     margin-right: -100px;
     height: 600px;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .display-4 {
@@ -58,6 +58,12 @@ body {
     font-size: 2em;
     font-weight: bold;
     color: rgba(0, 102, 255, 0.993);
+}
+
+.featured {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .p1 {
@@ -79,6 +85,10 @@ body {
     padding: 10px;
   }
 
+  .upper-left:hover {
+    box-shadow: 0 0 2px 1px  rgba(0, 102, 255, 0.993);
+  }
+
 .upper-right {
     position: absolute;
     top: 165px;
@@ -86,6 +96,10 @@ body {
     margin-right: -100px;
     width: 250px;
     padding: 10px;
+  }
+
+  .upper-right:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
   }
 
 .lower-left {
@@ -97,6 +111,10 @@ body {
     padding: 10px;
   }
 
+  .lower-left:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
+  }
+
 .lower-right {
     position: absolute;
     bottom: 75px;
@@ -105,3 +123,56 @@ body {
     width: 250px;
     padding: 10px;
   }
+
+.lower-right:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
+  }
+
+  .temp {
+    position: absolute;
+    top: 165px;
+    left: 20px;
+    margin-left: 30px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
+  }
+
+  .humid {
+    position: absolute;
+    top: 165px;
+    right: 20px;
+    margin-right: -100px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
+  }
+
+  .wind {
+    position: absolute;
+    bottom: 75px;
+    left: 20px;
+    margin-left: 30px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
+  }
+
+  .cloud {
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    margin-right: -100px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
+  }
+
+.comparison {
+    width: 400px;
+    padding: 10px;
+}
+
+.comparison:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
+}

@@ -20,28 +20,28 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">  
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="temperature.html">Temperature</a>
-                        <a class="dropdown-item" href="cloudiness.html">Precipitation</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="wind.html">Wind</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="index.html">Home</a>
-                    </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="temperature.html">Temperature</a>
+                <a class="dropdown-item" href="cloudiness.html">Precipitation</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="wind.html">Wind</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html">Home</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="cities.html">Cities</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">Comparisons</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="cities.html">Cities</a>
-                    </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
             </ul>
         </div>
     </nav>      
@@ -51,14 +51,16 @@
             <div class="col-md-7">
                 <div class="one">
                     <div class="jumbotron">
-                        <h1 class="display-4">Summary: Lattitude and Weather</h1>
+                        <h1 class="display-4">Sampled Cities</h1>
                         <hr class="my-4">
-                        <div class="image-wrapper float-left pr-2">
-                            <img src="assets/images/Mean Temperature by Latitude Range.png" width=350 alt="Mean Temperature by Lattitude Map">
+                        <div class="image pr-2">
+                            <a target="_blank" href="assets/images/City Lat-Lng Coordinates.png">
+                                <img class="featured" src="assets/images/City Lat-Lng Coordinates.png" width=425 alt="City by Lat-Lng Map">
+                            </a>
                         </div>
-                        <p class="p1">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset consisting of over 500 cities. Click <a href="cities.html">here</a> to see how the sample of cities was distributed across lattitudes and longitudes.</p>
+                        <p class="p1">There is less land mass and fewer cities in the southern latitudes, so there are very few sample cities south of -40 degree latitude.</p>
                         <br>
-                        <p class="p1">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as descriptions of any trends and correlations observed.</p>
+                        <p class="p1">Perhaps a stratified sample design could be used that would allow over-sampling of cities in the southern latitudes.</p>
                     </div>
                 </div>
             </div>
@@ -91,10 +93,10 @@
                     </div>    
                 </div>
             </div> 
-                         
+                            
         </div>
     </div>      
-  
+    
 
 </body>
 

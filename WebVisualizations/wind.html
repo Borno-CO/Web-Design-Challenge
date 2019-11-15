@@ -6,7 +6,7 @@
   <title>Lattitude Homework Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="wind.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                 <a class="nav-link" href="comparisons.html">Comparisons</a>
             </li>
             <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">Cities</a>
+                    <a class="nav-link" href="cities.html">Cities</a>
                 </li>
             <li class="nav-item">
                 <a class="nav-link" href="data.html">Data</a>
@@ -51,11 +51,11 @@
             <div class="col-md-7">
                 <div class="one">
                     <div class="jumbotron">
-                        <h1 class="display-4">Wind</h1>
+                        <h1 class="display-4">Wind Speed</h1>
                         <hr class="my-4">
                         <div class="image pr-2">
                             <a target="_blank" href="assets/images/Wind Speed by City Latitude.png">
-                                <img src="assets/images/Wind Speed by City Latitude.png" width=425 alt="Mean Wind Speed by Lattitude Map">
+                                <img class="featured" src="assets/images/Wind Speed by City Latitude.png" width=425 alt="Mean Wind Speed by Lattitude Map">
                             </a>
                         </div>
                         <p class="p1">There is no obvious relationship between latitude and wind, as illustrated by the scatter plot. If anything, there may be a cluster of cities between -20 degrees south and +20 degrees north that tend to have calmer wind.</p>
@@ -67,26 +67,27 @@
                     <div class="jumbotron">
                         <h1 class="display-4">Visualizations</h1>
                         <hr class="my-4">
-                        <article>
+                        <figure>
                             <a class="nav-link" href="temperature.html">
-                                <img class="upper-left" src="assets/images/Temperature by City Latitude.png" alt="Temperature Map">
+                                <img class="upper-left" src="assets/images/Temperature by City Latitude.png" alt="Temperature Map" data-toggle="tooltip" data-placement="bottom" title="Click for Temperature Results">
                             </a>
-                        </article>
-                        <article>
+                        </figure>
+                
+                        <figure>
                             <a class="nav-link" href="humidity.html">
-                                <img class="upper-right" src="assets/images/Humidity by City Latitude.png" alt="Humidity Map">
+                                <img class="upper-right" src="assets/images/Humidity by City Latitude.png" alt="Humidity Map" data-toggle="tooltip" data-placement="bottom" title="Click for Humidity Results">
                             </a>
-                        </article>
-                        <article>
+                        </figure>
+                        <figure>
                             <a class="nav-link" href="wind.html">
-                                <img class="lower-left" src="assets/images/Wind Speed by City Latitude.png" alt="wind Map">
+                                <img class="wind" src="assets/images/Wind Speed by City Latitude.png" alt="wind Map" data-toggle="tooltip" data-placement="bottom" title="Click for Wind Speed Results">
                             </a>
-                        </article>
-                        <article>
+                        </figure>
+                        <figure>
                             <a class="nav-link" href="cloudiness.html">
-                                <img class="lower-right" src="assets/images/Cloudiness by City Latitude.png" alt="Cloudiness Map">
+                                <img class="lower-right" src="assets/images/Cloudiness by City Latitude.png" alt="Cloudiness Map" data-toggle="tooltip" data-placement="bottom" title="Click for Cloudiness Results">
                             </a>
-                        </article>
+                        </figure>
                     </div>    
                 </div>
             </div> 
