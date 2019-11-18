@@ -1,21 +1,21 @@
 .navbar {
     background: rgb(0, 225, 255) !important;
-    height: 70px;
+    position: sticky;
+
 }
 
 .navbar-brand {
     font-family: "Verdanna", Geneva, sans-serif;
-    color: white !important;
-    font-size: 30px;
+    color: rgba(0, 102, 255, 0.993) !important;
     text-align: center;
-    background: rgba(0, 102, 255, 0.993);
-    padding: 20px;
+    font-size: 2.5em;
     margin-left: 50px;
 }
 
 .nav-item {
     font-family: "Verdanna", Geneva, sans-serif;
     font-size: 20px;
+    margin-right: 25px;
 }
 
 body {
@@ -24,28 +24,21 @@ body {
 
 .jumbotron {
     background: white;
-    margin-top: 50px;
-    height: 575px;
+    margin-top: 30px;
     padding-top: 20px;
+}
+
+.container {
+    height: 100%;
 }
 
 .jump-to-plots .container {
-  margin-top: 50px;
-  height: 575px;
+  margin-top: 30px;
+  height: 100%;
   background: white;
   padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
 }
 
-.two .jumbotron {
-    background: white;
-    margin-left: 30px;
-    margin-top: 50px;
-    margin-right: -100px;
-    height: 600px;
-    padding-top: 20px;
-}
 
 .display-4 {
     font-family: "Verdanna", Geneva, sans-serif;
@@ -53,6 +46,14 @@ body {
     font-weight: bold;
     color: rgba(0, 102, 255, 0.993);
 }
+
+
+ /* Make the image fully responsive */
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
 
 .h1 {
     font-family: "Verdanna", Geneva, sans-serif;
@@ -63,8 +64,9 @@ body {
 
 .featured {
     display:block;
-    margin-left:auto;
-    margin-right:auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .p1 {
@@ -74,53 +76,176 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
-    word-spacing: 5px;
+    word-spacing: 3px;
 }
+
 
 .plot-pic {
     object-fit: cover;
-    width: 185px;
+    width: 100%;
     margin-bottom: 35px;
   }
-  
+
+
 .plot-pic:hover {
     box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
   }
 
+
 .temp {
     object-fit: cover;
-    width: 185px;
+    width: 100%;
     margin-bottom: 35px;
     box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
   }
+
 
 .humid {
     object-fit: cover;
-    width: 185px;
+    width: 100%;
     margin-bottom: 35px;
     box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
   }
+
 
 .wind {
     object-fit: cover;
-    width: 185px;
+    width: 100%;
     margin-bottom: 35px;
     box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
   }
+
 
 .cloud {
     object-fit: cover;
-    width: 185px;
+    width: 100%;
     margin-bottom: 35px;
     box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
   }
 
+  .plot_title {
+    font-family: "Verdanna", Geneva, sans-serif;
+    font-size: 1.35em;
+    color: rgba(0, 102, 255, 0.993);
+    
+    
+}
+
 .comparison {
-    width: 400px;
-    padding: 10px;
+    width: 65%;
+    
 }
 
 .comparison:hover {
     box-shadow: 0 0 2px 1px rgba(0, 102, 255, 0.993);
 }
 
+
+.table {
+    border: 1px solid black;
+}
+
+.table .thead {
+    background:  rgba(0, 102, 255, 0.993);
+    color: white;
+}
+
+.table .thead th {
+    text-align: center;
+}
+
+.table td {
+    text-align: right;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: none!important;
+}
+
+
+#meanTemp {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  ##meanTemp:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    top: 0;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 102, 255, 0.993) !important; /* Fallback color */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    right: 100px;
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }

@@ -8,13 +8,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-        <link rel="stylesheet" href="reset.css">
+        
         <link rel="stylesheet" href="style.css">
     </head>
 
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     
         <a class="navbar-brand" href="index.html">Lattitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-8">
                 
                 <div class="jumbotron">
             
@@ -59,16 +59,15 @@
                     <hr class="my-4">
                                    
                             <div class="image-wrapper float-left pr-2">
-                                <img src="assets/images/Mean Temperature by Latitude Range.png" width=300 alt="Mean Temperature by Lattitude Map">
+                                <img src="assets/images/Mean Temperature by Latitude Range.png" width=350 alt="Mean Temperature by Lattitude Range Map">
                             </div>                   
                             <p class="p1">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset consisting of over 500 cities. Click <a href="cities.html">here</a> to see how the sample of cities was distributed across lattitudes and longitudes.</p>
-                            <br>
                             <p class="p1">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as descriptions of any observed correlations.</p>            
                     
                 </div>
             </div>
             
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <div class="jump-to-plots">
                     <div class="container">
                             <h1 class="display-4">Visualizations</h1>
@@ -96,6 +95,9 @@
                                         <img class="plot-pic" src="assets/images/Cloudiness by City Latitude.png" alt="Cloudiness Map" data-toggle="tooltip" data-placement="bottom" title="Click for Cloudiness Results">
                                     </a>                           
                             </div>
+                            
+                        </div>
+                        <div class="row no-gutters">
                             <p class="p1">    Click any plot above for analysis.</p>
                         </div>
                     </div> 
